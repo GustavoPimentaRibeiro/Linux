@@ -31,10 +31,31 @@
 -------- Instalando novos programas no Linux --------
 
 ------- Aula 6.1 (Instalação básica de programas no Linux) -------
--> 
+-> Muitos aplicativos podem ser achados no Gerenciador de Aplicativos do Mint
+
+
+
 
 ------- Aula 6.2 (Instalação avançada de programas no Linux) -------
--> 
+-> Gerenciador de Pacotes Synaptic serve para controlar pacotes que são instalados em diversos tipos de aplicativos instalados no seu Mint, ele é mais fácil por ter interface gráfica
+-> É possível receber dicas do que pode ser escrito no terminal apertando TAB para auto-completar algo ou apertando TAB duas vezes para mostrar no terminal todos os tipos de opções de auto-completar
+
+--- Terminal ---
+-> sudo - para ter comando de administrador no sistema operacional
+-> apt - é um manipulador de repositórios para baixar e atualizar programas
+    -> apt install - para instalar algum programa
+        -> apt install htop - 'htop' faz monitoramento de uso de todos os componentes do computador (acessado pelo terminal digitando 'htop')
+    -> apt remove - para desinstalar algum programa
+        -> apt remove htop - faz com que seja desinstalado o 'htop'
+    -> apt search - para pesquisar coisas relacionadas de acordo com o que passar por parâmetro
+        -> apt search eclipse - para procurar tudo que está relacionado com a IDE Eclipse
+    -> apt clean - para limpar o cache do sistema
+    -> apt autoremove - para limpar pacotes que não estão sendo mais utilizados
+-> dpkg - é um manipulador de pacotes de programas
+    -> dpkg --remove - para remover algum pacote que desejar
+        -> dpkg --remove code - para remover os pacotes do Visual Studio Code (exclui ele do computador, pois o code foi baixado de forma externa)
+    -> dpkg --install - para instalar algum pacote que deseja
+        -> dpkg --install code 'versão''tipo''extensão' - para instalar o Visual Studio Code através do terminal, a 'versão' depende do que baixou no momento do download do arquivo, além disto, 'tipo' de arquitetura (x64) e 'extensão' do que será instalado (.deb)
 
 
 
@@ -42,16 +63,52 @@
 -------- Comandos do Terminal do Linux --------
 
 ------- Aula 7.1 (Terminal no Linux - Introdução) -------
--> 
+-> O terminal padrão que aparece no Linux Mint é o Bash
+-> Todos os comandos do Linux estão na pasta '/bin' que está depois do diretório raiz '/'
+-> Todos os usb's estão na pasta '/dev/usb/'
+
+--- Terminal ---
+-> ls - mostra tudo o que está no diretório atual de navegação
+    -> ls -l/--long - para fazer uma listagem longa de todos os arquivos
+    -> ls -l -h - para fazer uma listagem longa de todos os arquivos porém com o tamanho de todos os arquivos de forma formatada
+    -> ls -a/--all - para mostrar todos os arquivos da pasta, até mesmo os ocultos
+    -> ls -la - para mostrar todos os arquivos da pasta, até mesmo os ocultos e ainda mostrar todos de forma detalhada
+    -> ls -lah - para mostrar todos os arquivos da pasta, até mesmo os ocultos e ainda mostrar todos de forma detalhada e com tamanhos formatados
+    -> ls /diretório - para buscar todos os arquivos de um 'diretório', mas não navega até ele
+-> cd - para navegar entre os diretórios do seu pc
+    -> cd Downloads/ - se estiver na raiz do usuário, navega para a pasta Donwloads
+    -> cd ~ - para voltar para a raiz do usuário
+    -> cd .. - para voltar um diretório da navegação
+    -> cd / - para navegar para o diretório raiz
+-> pwd - para mostrar o caminho em que está atualmente nos diretórios
+-> mkdir - para criar um diretório na pasta atual da navegação
+    -> mkdir teste - cria uma pasta 'teste'
+-> touch - cria um arquivo vazio
+    -> touch teste.txt - cria um arquivo 'teste' com a extensão '.txt'
+-> nano - editor de texto
+    -> nano teste.txt - abre o arquivo 'teste' para edição de texto
+        -> Ctrl+O para salvar o arquivo e Ctrl+X para sair do editor
 
 ------- Aula 7.2 (Terminal no Linux - Manipulando diretórios) -------
+-> 
+
+--- Terminal ---
 -> 
 
 ------- Aula 8 (Terminal no Linux - Referência Global) -------
 -> 
 
+--- Terminal ---
+-> 
+
 ------- Aula 9 (Terminal no Linux - Manipulação de Arquivos) -------
 -> 
 
+--- Terminal ---
+-> 
+
 ------- Aula 10 (Uso de pendrives e HDs externos no Linux) -------
+-> 
+
+--- Terminal ---
 -> 
