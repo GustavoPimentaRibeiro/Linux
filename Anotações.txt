@@ -1,0 +1,60 @@
+-------- Conceitos Fundamentais --------
+
+------- Aula 1 (Onde o Linux pode ser usado?) -------
+-> 
+
+------- Aula 2 (De onde veio o Linux? O que é software livre?) -------
+-> 
+
+------- Aula 3 (Licenças e Liberadades: é importante saber) -------
+-> 
+
+
+
+
+-------- Instalando o Linux --------
+
+------- Aula 4.1 (Instalando o Linux Mint) -------
+-> 
+
+------- Aula 4.2 (Pendrive Linux com Etcher) -------
+-> 
+
+
+
+
+-------- Ambiente do Linux Mint --------
+
+------- Aula 5 (Conhecendo o Ambiente do Linux Mint) -------
+-> 
+
+
+
+
+-------- Instalando novos programas no Linux --------
+
+------- Aula 6.1 (Instalação básica de programas no Linux) -------
+-> 
+
+------- Aula 6.2 (Instalação avançada de programas no Linux) -------
+-> 
+
+
+
+
+-------- Comandos do Terminal do Linux --------
+
+------- Aula 7.1 (Terminal no Linux - Introdução) -------
+-> 
+
+------- Aula 7.2 (Terminal no Linux - Manipulando diretórios) -------
+-> 
+
+------- Aula 8 (Terminal no Linux - Referência Global) -------
+-> 
+
+------- Aula 9 (Terminal no Linux - Manipulação de Arquivos) -------
+-> 
+
+------- Aula 10 (Uso de pendrives e HDs externos no Linux) -------
+-> 
