@@ -1,13 +1,10 @@
 -------- Conceitos Fundamentais --------
 
 ------- Aula 1 (Onde o Linux pode ser usado?) -------
--> 
 
 ------- Aula 2 (De onde veio o Linux? O que é software livre?) -------
--> 
 
 ------- Aula 3 (Licenças e Liberadades: é importante saber) -------
--> 
 
 
 
@@ -15,18 +12,18 @@
 -------- Instalando o Linux --------
 
 ------- Aula 4.1 (Instalando o Linux Mint) -------
--> 
+-> Versão de instalação é LMDE5 (Mais atual)
+
+
+
 
 ------- Aula 4.2 (Pendrive Linux com Etcher) -------
--> 
-
-
 
 
 -------- Ambiente do Linux Mint --------
 
 ------- Aula 5 (Conhecendo o Ambiente do Linux Mint) -------
--> 
+-> Timeshift para fazer backups
 
 
 
