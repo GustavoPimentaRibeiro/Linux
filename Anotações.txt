@@ -2,7 +2,9 @@
 
 ------- Aula 1 (Onde o Linux pode ser usado?) -------
 
+
 ------- Aula 2 (De onde veio o Linux? O que é software livre?) -------
+
 
 ------- Aula 3 (Licenças e Liberadades: é importante saber) -------
 
@@ -76,6 +78,15 @@
     -> ls -lah - para mostrar todos os arquivos da pasta, até mesmo os ocultos e ainda mostrar todos de forma detalhada e com tamanhos formatados
     -> ls /diretório - para buscar todos os arquivos de um 'diretório', mas não navega até ele
     -> ls -R - Mostra todos os conteúdos de todas as pastas e subpastas do diretório em que está, caso queira de um "próximo" diretório é só digitar como sufixo 'diretorio/'
+    -> ls /etc/*.conf - lista todos os arquivos dentro do diretório '/etc/' que tem como sufixo a extensão '.conf', o '*' indica que pode ser qualquer combinação de caracteres
+        -> ls /etc/*x* - lista todos os arquivos dentro do diretório '/etc/' que tem como subpalavra 'x'
+        -> ls /etc/x* - lista todos os arquivos dentro do diretório '/etc/' que tem como prefixo 'x'
+    -> ls /etc/?x* - lista todos os arquivos dentro do diretório '/etc/' que tem como a segunda letra o 'x', a '?' faz referência a qualquer caractere único, ou seja, somente 1 caractere qualquer
+        -> ls /etc/??x* - lista todos os arquivos dentro do diretório '/etc/' que tem como a terceira letra o 'x'
+    -> ls /etc/p[a-f]* - lista todos os arquivos dentro do diretório '/etc/' que tem como primeira letra 'p' e segunda letra de 'a' até 'f', o resto pode ser aleatório
+        -> ls /etc/p[af]* - tem o mesmo efeito que a linha acima, não necessariamente precisa do hífen se estiver dentor de colchetes '[]'
+    -> ls /etc/p[a, b]* - lista todos os arquivos dentro do diretório '/etc/' que tem como primeira letra 'p' e segunda letra 'a' ou 'b', o resto pode ser aleatório
+    -> ls /etc/{am, ul}* - lista todos os arquivos dentro do diretório '/etc/' que tem como prefixo exatamente 'am' ou 'ul', o resto pode ser aleatório
 -> cd - para navegar entre os diretórios do seu pc
     -> cd Downloads/ - se estiver na raiz do usuário, navega para a pasta Donwloads
     -> cd ~ - para voltar para a raiz do usuário
@@ -91,6 +102,9 @@
 -> nano - editor de texto
     -> nano teste.txt - abre o arquivo 'teste' para edição de texto
         -> Ctrl+O para salvar o arquivo e Ctrl+X para sair do editor
+
+
+
 
 ------- Aula 7.2 (Terminal no Linux - Manipulando diretórios) -------
 -> O parâmetro '--help' está na maioria dos comandos para ajudar com possíveis parâmetros que servem para aquele comando
@@ -117,19 +131,42 @@
 
 
 ------- Aula 8 (Terminal no Linux - Referência Global) -------
--> 
 
---- Terminal ---
--> 
 
 ------- Aula 9 (Terminal no Linux - Manipulação de Arquivos) -------
--> 
 
 --- Terminal ---
--> 
+-> less - é parecido com 'touch' porém ele abre o arquivo e mostra no terminal de forma mais interativa
+    -> seta para baixo/pagedown - desce o conteúdo
+    -> seta para cima/pageup - sobe o conteúdo
+    -> end - pula para o final do conteúdo
+    -> home - pula para o início do conteúdo
+    -> h - para mostrar todos os comandos que existem no 'less'
+-> tac - é parecido com o 'cat' porém ele mostra todo o arquivo de trás para frente em linhas, mas não inverte todas as palavras, só a ordem de linhas
+-> cp - copia um arquivo de um diretório e cola em outro
+    -> cp teste.txt Downloads/ - copia o arquivo 'teste.txt' para o diretório 'Downloads/'
+    -> cp /etc/*.conf temp/ - copia todos os arquivos terminados com '.conf' que está dentro do diretório '/etc/' e cola no diretório 'temp/'
+-> mv - move o arquivo de um diretório ou modifica o nome de um arquivo/diretório
+    -> mv teste.txt Downloads/ - move o arquivo 'teste.txt' para o diretório 'Downloads/'
+    -> mv temp/ Temp - troca o nome do diretório 'temp' para 'Temp'
+
+
+
 
 ------- Aula 10 (Uso de pendrives e HDs externos no Linux) -------
--> 
-
---- Terminal ---
--> 
+-> Tipos de formatação de dispositivos
+    -> FAT32
+        -> Mais compatível em todos os lugares
+        -> Não é possível manipular arquivos maiores que 4GB
+    -> exFAT
+        -> Mais compatível em todos os lugares
+        -> Pode lidar com arquivos maiores que 4GB
+        -> Não tão compatível quanto o FAT32
+    -> NTFS
+        -> Mais compatível com Windows
+        -> Não é compatível com MAC e com a maioria dos dispositivos de hardware
+        -> Problemas ocasionais com Linux
+    -> EXT4
+        -> Moderno, estável, rápido e jornalizado
+        -> Suporta permissões de arquivos do Linux
+        -> Não é compatível com Windows, Mac e a maioria dos dispositivos de hardware
