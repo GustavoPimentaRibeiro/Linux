@@ -68,32 +68,53 @@
 -> Todos os usb's estão na pasta '/dev/usb/'
 
 --- Terminal ---
--> ls - mostra tudo o que está no diretório atual de navegação
+-> ls - mostra tudo o que está no diretório atual de navegação (É possível concatenar todos os parâmetros de uma vez só para fazer um comando mais elaborado)
     -> ls -l/--long - para fazer uma listagem longa de todos os arquivos
     -> ls -l -h - para fazer uma listagem longa de todos os arquivos porém com o tamanho de todos os arquivos de forma formatada
     -> ls -a/--all - para mostrar todos os arquivos da pasta, até mesmo os ocultos
     -> ls -la - para mostrar todos os arquivos da pasta, até mesmo os ocultos e ainda mostrar todos de forma detalhada
     -> ls -lah - para mostrar todos os arquivos da pasta, até mesmo os ocultos e ainda mostrar todos de forma detalhada e com tamanhos formatados
     -> ls /diretório - para buscar todos os arquivos de um 'diretório', mas não navega até ele
+    -> ls -R - Mostra todos os conteúdos de todas as pastas e subpastas do diretório em que está, caso queira de um "próximo" diretório é só digitar como sufixo 'diretorio/'
 -> cd - para navegar entre os diretórios do seu pc
     -> cd Downloads/ - se estiver na raiz do usuário, navega para a pasta Donwloads
     -> cd ~ - para voltar para a raiz do usuário
     -> cd .. - para voltar um diretório da navegação
     -> cd / - para navegar para o diretório raiz
 -> pwd - para mostrar o caminho em que está atualmente nos diretórios
--> mkdir - para criar um diretório na pasta atual da navegação
+-> mkdir - para criar um diretório no diretório atual da navegação (Suporta a criação de várias pastas ao mesmo tempo, só necessita separar por espaços)
     -> mkdir teste - cria uma pasta 'teste'
--> touch - cria um arquivo vazio
+    -> mkdir -p teste1/teste2/teste3/teste\ 4/ - força a criação de todas as pastas aninhadas caso não existem, é também possível adicionar um espaço no nome do arquivo utilizando o '\ '
+        -> mkdir -p "teste1/teste2/teste3/teste 4/" - otra opção para considerar espaços na criação de pastas é utilizar aspas duplas no comando todo
+-> touch - cria um arquivo vazio (é possível também passar o caminho relativo a partir do diretório atual para facilitar a criação)
     -> touch teste.txt - cria um arquivo 'teste' com a extensão '.txt'
 -> nano - editor de texto
     -> nano teste.txt - abre o arquivo 'teste' para edição de texto
         -> Ctrl+O para salvar o arquivo e Ctrl+X para sair do editor
 
 ------- Aula 7.2 (Terminal no Linux - Manipulando diretórios) -------
--> 
+-> O parâmetro '--help' está na maioria dos comandos para ajudar com possíveis parâmetros que servem para aquele comando
+-> Toda pasta criada em Linux tem atributo '.' que aponta para a própria pasta e o '..' que aponta para a pasta anterior
 
 --- Terminal ---
--> 
+-> man - para acessar o manual da instrução que deseja
+    -> man ls - acessa o manual do comando 'ls' por exemplo
+-> history - acessa todos os comandos já feitos no terminal do Bash
+    -> !5 - executa o comando de número '5' que está no 'history' do Bash
+-> cat - para ver o conteúdo do arquivo
+    -> cat teste.txt - vê o conteúdo do arquivo 'teste.txt'
+-> rm - para remover um arquivo
+    -> rm text.txt - remove o arquivo 'teste.txt'
+    -> rm -rf diretório - o parâmetro '-r' remove os arquivos recursivamente e o '-f' faz com que seja forçado a exclusão, desta forma será excluído tudo que está no 'diretorio'
+    -> rm -i - faz com que seja perguntado se deseja excluir mesmo o arquivo ou diretório
+    -> rm -I - faz com que seja perguntado se deseja excluir mesmo o arquivo ou diretório somente se tiver mais que dois arquivos/diretórios dentro deste diretório
+-> rmdir - para remover um diretório
+    -> rmdir diretorio - remove um 'diretorio' (caso ele esteja com algum arquivo dentro, então não será excluído)
+-> alias - para modificar o comando padrão do Linux (só funciona enquanto o terminal estiver aberto)
+    -> alias rm="rm -I" - faz com que o comando 'rm' sempre inclua o parâmetro '-I' quando digitado
+
+
+
 
 ------- Aula 8 (Terminal no Linux - Referência Global) -------
 -> 
